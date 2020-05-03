@@ -1,0 +1,15 @@
+
+
+ {% if searchresults %}
+  {% for searchresult in searchresults %}
+{{searchresult.content|safe}}
+{{searchresult.author|safe}}
+   {% else %}
+<p>  {{searchword}} Can't Be Found kindly visit home </p>
+
+{% endfor %}
+
+
+ {% endif %}
+
+
